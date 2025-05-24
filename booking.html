@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Grace Dental Clinic</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Dentia — Dentist & Dental Clinic Website Template" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+
+        <!-- preloader begin -->
+        <div id="de-loader"></div>
+        <!-- preloader end -->
+
+        <!-- header begin -->
+        <header class="transparent header-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                   <a href="index.html">
+                                        <img class="logo-main" src="images/logo-dark2.png" alt="Grace-icon" >
+                                        <img class="logo-scroll" src="images/logo-dark2.png" alt="Grace-icon" >
+                                        <img class="logo-mobile" src="images/logo-dark2.png" alt="Grace-icon" >
+                                    </a>
+                                </div>
+                                <!-- logo end -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainemenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Главная</a></li>
+                                    <li><a class="menu-item" href="#serves">Услуги</a></li>
+                                    <li><a class="menu-item" href="#about">О нас</a></li>
+                                    <li><a class="menu-item" href="#blog">Блог</a></li>
+                                    <li><a class="menu-item" href="#reviews">Отзывы</a></li>
+                                    <li><a class="menu-item" href="#">Контакты</a></li>
+                                </ul>
+                                <!-- mainmenu end -->
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" class="btn-main fx-slide"><span>Записаться</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+
+                                <div id="btn-extra">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section id="subheader" class="bg-color-op-1 text-center">
+                <div class="container relative z-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <h1 class="wow fadeInUp">Забронировать встречу</h1>
+                            <div class="border-bottom my-3"></div>
+                            <ul class="crumb wow fadeInDown">
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="active">Забронировать встречу</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="container relative z-2">
+                    <div class="row g-4 gx-5 justify-content-between">
+
+                        <div class="col-lg-6">
+                            <div class="relative">
+                                <div id="success_message_col" class='success p-40 h-100'>
+                                    <h3>Благодарим Вас За Ваш Заказ</h3>
+                                    <p>Мы получили ваш запрос и вскоре обработаем его. Нажмите кнопку ниже, если вы хотите сделать другой заказ.</p>
+                                    <a class="btn-main" href="booking.html">Повторный заказ</a>
+                                </div>
+
+                                <form name="bookingForm" id="booking_form" method="post" action="booking.php">
+                                    
+                                    <div class="row g-4">
+                                        <div class="col-lg-12">
+                                            <h3 class="mb-3"><i class="fa fa-envelope-o id-color me-2"></i> Запишитесь на прием</h3>
+                                            <p>Запишитесь на прием сегодня для получения экспертной стоматологической помощи, адаптированной под ваши потребности. Здоровые, красивые улыбки начинаются с простого шага, запишитесь сейчас!</p>
+                                            <div class="relative">
+                                                <select name="service" id="service" class="form-control">
+                                                    <option disabled selected value>Выбрать услугу</option>
+                                                    <option value="General Dentistry">Общая стоматология</option>
+                                                    <option value="Cosmetic Dentistry">Косметическая стоматология</option>
+                                                    <option value="Pediatric Dentistry">Детская стоматология</option>
+                                                    <option value="Restorative Dentistry">Восстановительная стоматология</option>
+                                                    <option value="Preventive Dentistry">Профилактическая стоматология</option>
+                                                    <option value="Orthodontics">Прочеи</option>
+                                                </select>
+                                                <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div id="date" class="relative input-group date" data-date-format="mm-dd-yyyy">
+                                                <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"></i>
+                                                <input class="form-control" value="Select Date" name="date" type="text" >
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="relative">
+                                                <select name="time" id="time" class="form-control">
+                                                    <option disabled selected value>Выберите время</option>
+                                                    <option value="10:00">10:00</option>
+                                                    <option value="11:00">11:00</option>
+                                                    <option value="12:00">12:00</option>
+                                                    <option value="13:00">13:00</option>
+                                                    <option value="14:00">14:00</option>
+                                                    <option value="15:00">15:00</option>
+                                                    <option value="16:00">16:00</option>
+                                                    <option value="17:00">17:00</option>
+                                                    <option value="18:00">18:00</option>
+                                                    <option value="19:00">19:00</option>
+                                                    <option value="20:00">20:00</option>
+                                                </select>
+                                                <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <input type="text" name="name" id="name" placeholder="Имя" class="form-control" placeholder="" required>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <input type="text" name="email" id="email" placeholder="Электронная почта" class="form-control" placeholder="" required>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <input type="text" name="phone" id="phone" placeholder="Телефон" class="form-control" placeholder="" required>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <textarea name="message" id="message" class="form-control" placeholder="Сообщение"></textarea>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div id='submit'>
+                                                <input type='submit' id='send_message' value='Назначить встречу' class="btn-main">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="error_message" class='error'>
+                                        Извините, при отправке вашей формы произошла ошибка.
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="h-100 rounded-1 relative" data-bgimage="url(images/misc/s4.webp) center">
+                                <div class="bg-blur text-light shadow-1 abs start-10 bottom-10 p-4 rounded-1 overflow-hidden z-2" data-wow-delay=".5s">
+                                    <div class="d-flex justify-content-center">
+                                        <i class="fs-60 text-white icon_clock"></i>
+                                        <div class="ms-3">
+                                            <h4 class="mb-0">Режим работы</h4>
+                                            С Пн по Вс | 24/7
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content end -->
+
+        <!-- footer begin -->
+        <footer class="section-dark">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <img src="images/logo-white.png" class="logo-footer" alt="" >
+                        <div class="spacer-20"></div>
+                        <p>Вот уже более пять лет мы доказываем, что качественная и доступная стоматология – это реально. В сети представлен весь спектр услуг – лечение зубов.</p>
+
+                        <div class="social-icons mb-sm-30">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Клиника</h5>
+                                    <ul>                                        
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Наши услуги</h5>
+                                    <ul>
+                                        <li><a href="#">Общая стоматология</a></li>
+                                        <li><a href="#">Детская стоматология</a></li>
+                                        <li><a href="#">Лечение зубов</a></li>
+                                        <li><a href="#">Отбеливание зубов</a></li>
+                                        <li><a href="#">Имплантация зубов</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <h5>Контакты</h5>
+                            <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color"></i>Расположение клиники</div>
+                                <a href="https://maps.app.goo.gl/8XQ94whxKovFowZN7" target="_blank">1-й микрорайон, 1, Чирчик, Таш-обл.</a>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-phone me-2 id-color"></i>Позвоните нам</div>
+                            <a href="tel:+998930735858">+998 93 073 58 58</a>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color"></i>Отправить сообщение</div>
+                            grace@dental.com                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    © 2025 Все права защищены
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+
+
+    <div id="extra-wrap" class="text-light">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo-white.png" class="w-150px" alt="">
+
+            <div class="spacer-30-line"></div>
+
+            <h5>Наше обслуживание</h5>
+            <ul class="ul-check">
+                <li><a href="index.html#">Главная</a></li>
+                <li><a href="index.html#serves">Услуги</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#blog">Блог</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+
+            <div class="spacer-30-line"></div>
+
+            <h5>Контакты</h5>
+            <div><i class="icofont-clock-time me-2 op-5"></i>Понедельник - воскресенье с 01.00 до 24.00</div>
+            <div><i class="icofont-location-pin me-2 op-5"></i><a class="text-white" href="https://maps.app.goo.gl/8XQ94whxKovFowZN7" target="_blank">1-й микрорайон, 1, Чирчик, Таш-обл.</a></div>
+            <div><i class="icofont-phone me-2 op-5"></i><a class="text-white" href="tel:+998930735858">+998 93 073 58 58</a></div>
+
+            <div class="spacer-30-line"></div>
+
+            <h5>О нас</h5>
+            <p>Вот уже более пять лет мы доказываем, что качественная и доступная стоматология – это реально. В сети представлен весь спектр услуг – лечение зубов.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/validation-booking.js"></script>
+
+    <!-- datepicker begin -->
+    <script>
+        $(function () {
+          $("#date").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          }).datepicker('update', new Date());
+        });
+
+    </script>
+    <!-- datepicker close -->
+
+</body>
+
+</html>
